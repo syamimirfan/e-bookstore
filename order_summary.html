@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style3.css">
-    <link rel="stylesheet" href="https://fontawesome.com/icons/magnifying-glass?s=solid&f=classic">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-    <title>Product Detail</title>
-
+    <link rel="stylesheet" href="../css/style6.css">
+    <title>Order Summary</title>
 </head>
 
 <body>
@@ -17,7 +14,7 @@
     <nav class="navbar">
         <div class="navbar_container">
             <div class="container">
-                <a id="navbar_logo" href="../view/home.html">
+                <a id="navbar_logo" href="index.html">
                     <img src="../assets/logo.png" class="logo"> E-Book
                 </a>
             </div>
@@ -29,28 +26,28 @@
 
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="../view/home.html" class="navbar_links" id="home-page">Home</a>
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
                 </li>
 
                 <li class="navbar_item">
-                    <a href="../view/product.html" class="navbar_links" id="product-page">Product</a>
+                    <a href="product.html" class="navbar_links" id="product-page">Product</a>
                 </li>
 
                 <li class="navbar__item">
-                    <a href="../view/home.html#services" class="navbar_links" id="services-page">Services</a>
+                    <a href="index.html#services" class="navbar_links" id="services-page">Services</a>
                 </li>
 
 
                 <li class="navbar_item">
-                    <a href="../view/home.html#about" class="navbar_links" id="about-page">About</a>
+                    <a href="index.html#about" class="navbar_links" id="about-page">About</a>
                 </li>
 
                 <li class="signin_btn">
-                    <a href="#sign_In" class="sign_in">Sign In</a>
+                    <a href="authentication.html" class="sign_in">Sign In</a>
                 </li>
 
                 <li class="cart_btn">
-                    <a href="#cart" class="cart">Cart</a>
+                    <a href="product_order.html" class="cart">Cart </a>
                 </li>
 
                 <img src="../assets/sun.png" alt="sun.png" id="theme" style="cursor: pointer;">
@@ -58,39 +55,39 @@
         </div>
     </nav>
 
-    <!--DETAIL SECTION-->
+    <!--ORDER SUMMARY SECTION-->
 
-    <div class="container_product_detail">
-        <div class="row">
-            <div id="image">
-                <!-- image -->
-                <!-- <img src="${product[0].image}" class="img"> -->
+    <div class="total_container">
+        <div class="total">
+            <h5>CART TOTAL</h5>
+            <div class="subtotal">
+                <!-- <h6>Subtotal</h6>
+                <p>RM 230.00</p> -->
             </div>
-            <div id="info">
-                <!-- <div class="information">NEW</div>-->
-                <!-- productName -->
-                <!-- <h2>${product[0].productName}</h2>
-                <label><b>Product Code</b></label> -->
-                <!-- productID -->
-                <!-- <p class="text_green">${product[0].productID}</p>
-                <img src="../assets/star.png" alt="star.png" class="star"> -->
-                <!-- description -->
-                <!-- <p>${product[0].description}</p> -->
-                <!-- price -->
-                <!-- <p class="price">${product[0].price}</p>
-                <label><b>Availability</b></label>
-                <p class="text_green"> In Stock</p>
-                <label><b>Condition</b></label>
-                <p class="text_green"> New</p>
-                <label><b>Quantity</b></label>
-                <input type="text" value="1">
-                <button type="button" class="btn_cart">
-                    Order Now
-                </button>  -->
+            <div class="discount1">
+                <!-- <h6>5% Discount</h6>
+                <p>RM 230.00</p> -->
+            </div>
+            <div class="discount2">
+                <!-- <h6>15% Discount</h6>
+                <p>RM 230.00</p> -->
+            </div>
+            <div class="postage">
+                <!-- <h6>Postage</h6>
+                <p>FREE</p> -->
+            </div>
+            <hr class="divider_total">
+
+            <div class="amount">
+                <!-- <h6>TOTAL</h6>
+                <p>RM 230.00</p> -->
+            </div>
+            <div class="button_container">
+                <button><a href="product_order.html" class="checkout_button">BACK</a></button>
+                <button class="button_order"><a href="payment.html" class="checkout_button2">ORDER</a></button>
             </div>
         </div>
     </div>
-
 
     <!--ABOUT SECTION-->
     <div class="footer_container" id="about">
@@ -145,8 +142,9 @@
             </div>
         </div>
     </div>
-    <script src="../js/products.js"></script>
+
     <script src="../js/mobile_menu.js"></script>
+    <script src="../js/product_order.js"></script>
 </body>
 
 </html>

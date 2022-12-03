@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style2.css">
     <link rel="stylesheet" href="https://fontawesome.com/icons/magnifying-glass?s=solid&f=classic">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-    <title>Product</title>
+    <title>Electric & Electronic Product</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar">
         <div class="navbar_container">
             <div class="container">
-                <a id="navbar_logo" href="../view/home.html">
+                <a id="navbar_logo" href="index.html">
                     <img src="../assets/logo.png" class="logo"> E-Book
                 </a>
             </div>
@@ -28,32 +28,31 @@
 
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="../view/home.html" class="navbar_links" id="home-page">Home</a>
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
                 </li>
 
                 <li class="navbar_item">
-                    <a href="../view/product.html" class="navbar_links" id="product-page">Product</a>
+                    <a href="product.html" class="navbar_links" id="product-page">Product</a>
                 </li>
 
                 <li class="navbar__item">
-                    <a href="../view/home.html#services" class="navbar_links" id="services-page">Services</a>
+                    <a href="index.html#services" class="navbar_links" id="services-page">Services</a>
                 </li>
 
 
                 <li class="navbar_item">
-                    <a href="../view/home.html#about" class="navbar_links" id="about-page">About</a>
+                    <a href="index.html#about" class="navbar_links" id="about-page">About</a>
                 </li>
 
                 <li class="signin_btn">
-                    <a href="#sign_In" class="sign_in">Sign In</a>
+                    <a href="authentication.html" class="sign_in">Sign In</a>
                 </li>
 
                 <li class="cart_btn">
-                    <a href="#cart" class="cart">Cart</a>
+                    <a href="product_order.html" class="cart">Cart </a>
                 </li>
 
                 <img src="../assets/sun.png" alt="sun.png" id="theme" style="cursor: pointer;">
-
             </ul>
         </div>
     </nav>
@@ -64,18 +63,15 @@
             <div class="row">
                 <div class="categories_container">
                     <h2 class="categories_header">Categories</h2>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_programming.html" >Programming</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_technology.html"  >Technology</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_electric_electronic.html" style="color:black; font-weight: bold;">Electric & Electronic</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_mathematics.html">Mathematics</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_business_law.html">Business Law</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_programming.html" >Programming</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_technology.html"  >Technology</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_electric_electronic.html" style="color:black; font-weight: bold;">Electric & Electronic</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_mathematics.html">Mathematics</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_business_law.html">Business Law</a> </b></p>
                 </div>
                 <div class="main_section">
                     <div class="row-2">
-                        <form action="" class="search">
-                            <input type="text" placeholder="Search...">
-                            <button class="btn_search"><i class="fa fa-search" style="color: white; font-size: 17px;"></i></button>
-                        </form>
+                        <input type="text" id="find" onkeyup="search()" placeholder="Search...">
                         <select id="form_control">
                             <option value="">Sorting A-Z</option>
                             <option value="popularity">Sorting by popularity</option>
@@ -97,7 +93,7 @@
                                 <p class="tags">Price RM 80.00</p>
                                 <br>
                                 <br>
-                                <a href="../view/product_detail.html?id=003" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=003" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -107,7 +103,7 @@
                                 <h5 class="card_title"><b>Measurements and Instrumentation</b></h5>
                                 <p class="card_text">The information of equipments in electric and electronic.</p>
                                 <p class="tags">Price RM 85.00</p>
-                                <a href="../view/product_detail.html?id=010" class=btn_cart "><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=010" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -117,7 +113,7 @@
                                 <h5 class="card_title "><b>Power Electronic</b></h5>
                                 <p class="card_text ">The branch of electrical engineering that deals with the processing of high voltages and currents to deliver power that supports a variety of needs.</p>
                                 <p class="tags ">Price RM 93.00</p>
-                                <a href="../view/product_detail.html?id=015 " class="btn_cart "><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=015 " class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -131,7 +127,7 @@
                                 <h5 class="card_title "><b>Electric Circuits and Electronic Devices</b></h5>
                                 <p class="card_text ">The device which controls the flow of electrons is called electronic device.</p>
                                 <p class="tags ">Price RM 129.00</p>
-                                <a href="../view/product_detail.html?id=023 " class="btn_cart "><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=023 " class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -141,7 +137,7 @@
                                 <h5 class="card_title "><b>Practical Electronics for Inventors</b></h5>
                                 <p class="card_text ">Written by a pair of experienced engineers and dedicated hobbyists.</p>
                                 <p class="tags ">Price RM 60.00</p>
-                                <a href="../view/product_detail.html?id=024 " class="btn_cart "><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=024 " class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -211,6 +207,25 @@
 
     <script src="../js/mobile_menu.js "></script>
     <script src="../js/products.js "></script>
+    <script type="text/javascript">
+        function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let product = document.querySelectorAll('.card_body');
+            let l = document.getElementsByTagName('h5');
+
+            for (var i = 0; i <= l.length; i++) {
+                let a = product[i].getElementsByTagName('h5')[0];
+
+                let value = a.innerHTML || a.innerText || a.textContent;
+
+                if (value.toUpperCase().indexOf(filter) > -1) {
+                    product[i].style.display = "";
+                } else {
+                    product[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

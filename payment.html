@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style7.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b6afef4a2a.js" crossorigin="anonymous"></script>
+    <title>Payment</title>
+</head>
+
+<body>
+
+    <!--NAVBAR SECTION-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <div class="container">
+                <a id="navbar_logo" href="index.html">
+                    <img src="../assets/logo.png" class="logo"> E-Book
+                </a>
+            </div>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+
+                <li class="navbar_item">
+                    <a href="product.html" class="navbar_links" id="product-page">Product</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="index.html#services" class="navbar_links" id="services-page">Services</a>
+                </li>
+
+
+                <li class="navbar_item">
+                    <a href="index.html#about" class="navbar_links" id="about-page">About</a>
+                </li>
+
+                <li class="signin_btn">
+                    <a href="authentication.html" class="sign_in">Sign In</a>
+                </li>
+
+                <li class="cart_btn">
+                    <a href="product_order.html" class="cart">Cart </a>
+                </li>
+
+                <img src="../assets/sun.png" alt="sun.png" id="theme" style="cursor: pointer;">
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAYMENT SECTION -->
+    <div class="wrapper">
+        <h2>Payment Form</h2>
+        <button class="online_banking_button"><a href="" class="online_banking">Online Banking</a></button>
+        <hr>
+        <label for="" class="pay_with_card">Or pay with the card</label>
+        <form action="">
+            <h4>Account</h4>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" name="first_name" class="name" placeholder="First Name">
+                    <i class="fas fa-user icon"></i>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="last_name" class="name" placeholder="Last Name">
+                    <i class="fas fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" name="email" class="name" placeholder="Email">
+                    <i class="fas fa-envelope icon"></i>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="address" class="name" placeholder="Address">
+                    <i class="fa fa-location-dot icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <h4>Date of Birth</h4>
+                    <input type="text" class="dob" placeholder="DD">
+                    <input type="text" class="dob" placeholder="MM">
+                    <input type="text" class="dob" placeholder="YYYY">
+                </div>
+                <div class="input_box">
+                    <h4>Gender</h4>
+                    <input type="radio" id="b1" name="gender" checked class="radio">
+                    <label for="b1" class="radio_label">Male</label>
+                    <input type="radio" id="b2" name="gender" class="radio">
+                    <label for="b2" class="radio_label">Female</label>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <h4>Payment Details</h4>
+                    <input type="radio" name="pay" id="bc1" checked class="radio">
+                    <label for="bc1" class="radio_label"><span><i class="fa-brands fa-cc-visa "></i></span>
+                     Credit Card</label>
+                    <input type="radio" name="pay" id="bc2" checked class="radio">
+                    <label for="bc2" class="radio_label"><span><i class="fa-brands fa-cc-paypal "></i></span>
+                      Paypal</label>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="tel" name="pay" placeholder="Card Number" required class="name">
+                    <i class="fa fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="tel" name="pay" placeholder="Card CVC" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="expired" placeholder="1" required class="card_expired">
+                    <label for="" class="slash">/</label>
+                    <input type="text" placeholder="2022" name="expired" required class="card_expired">
+                </div>
+            </div>
+            <div class="input_group">
+                <button><a href="">PAY NOW</a></button>
+            </div>
+        </form>
+    </div>
+
+    <!--ABOUT SECTION-->
+    <div class="footer_container" id="about">
+        <div class="footer_link_wrapper">
+            <div class="footer_link_items">
+                <h2>About Us</h2>
+                <a href="">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="">Careers</a>
+                <a href="/">Terms of Service</a>
+                <a href="/">Customer Service</a>
+            </div>
+            <div class="footer_link_items">
+                <h2>Contact Us</h2>
+                <a href="/">Contact</a>
+                <a href="/">Support</a>
+                <a href="/">Destinations</a>
+                <a href="/">WhatsApp</a>
+                <a href="/">Telegram</a>
+            </div>
+            <div class="footer_link_items">
+                <h2>Videos</h2>
+                <a href="">Submit Video</a>
+                <a href="/">Ambassador</a>
+                <a href="/">Agency</a>
+                <a href="/">Company</a>
+                <a href="/">Business</a>
+            </div>
+            <div class="footer_link_items">
+                <h2>Social media</h2>
+                <a href="/">Instagram</a><a href="/">Facebook</a>
+                <a href="/">Youtube</a> <a href="/">Twitter</a>
+                <a href="/">Linkedln</a>
+            </div>
+        </div>
+
+        <div class="social_media">
+            <div class="social_media_wrap">
+                <p class="website_rights">© E-BOOK 2022. All rights reserved</p>
+                <div class="social_icons">
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-youtube"></i></a>
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-twitter"></i></a>
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/mobile_menu.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+
+</html>

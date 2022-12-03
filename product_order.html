@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="../css/style1.css">
-    <!--Font Awesome Icons-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-    <title>Home</title>
+    <link rel="stylesheet" href="../css/style5.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b6afef4a2a.js" crossorigin="anonymous"></script>
+    <title>Product Order</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <nav class="navbar">
         <div class="navbar_container">
             <div class="container">
-                <a id="navbar_logo" href="../view/home.html">
+                <a id="navbar_logo" href="index.html">
                     <img src="../assets/logo.png" class="logo"> E-Book
                 </a>
             </div>
@@ -29,100 +29,84 @@
 
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="#home" class="navbar_links" id="home-page">Home</a>
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
                 </li>
 
                 <li class="navbar_item">
-                    <a href="../view/product.html" class="navbar_links" id="product-page">Product</a>
+                    <a href="product.html" class="navbar_links" id="product-page">Product</a>
                 </li>
 
                 <li class="navbar__item">
-                    <a href="#services" class="navbar_links" id="services-page">Services</a>
+                    <a href="index.html#services" class="navbar_links" id="services-page">Services</a>
                 </li>
 
 
                 <li class="navbar_item">
-                    <a href="#about" class="navbar_links" id="about-page">About</a>
+                    <a href="index.html#about" class="navbar_links" id="about-page">About</a>
                 </li>
 
                 <li class="signin_btn">
-                    <a href="#sign_In" class="sign_in">Sign In</a>
+                    <a href="authentication.html" class="sign_in">Sign In</a>
                 </li>
+
                 <li class="cart_btn">
-                    <a href="#cart" class="cart">Cart</a>
+                    <a href="product_order.html" class="cart">Cart </a>
                 </li>
+
                 <img src="../assets/sun.png" alt="sun.png" id="theme" style="cursor: pointer;">
             </ul>
         </div>
     </nav>
 
-    <!--HERO SECTION-->
-    <div class="hero" id="home">
-        <div class="hero_container">
-            <h1 class="hero_heading">
-                Choose your
-                <span>BOOKS</span>
-            </h1>
-            <p class="hero_description">
-                More product for book is incoming
-            </p>
-            <button class="main_btn"><a href="../view/product.html">More product</a></button>
-        </div>
+    <!-- PRODUCT ORDER SECTION -->
+    <div class="title">
+        <h2>Shopping Cart</h2>
+        <hr color="#be2c2c">
     </div>
 
-    <!--SERVICES SECTION-->
-    <div class="services" id="services">
-        <h1>Our Services</h1>
-        <div class="services_wrapper">
-            <div class="services_card">
-                <div class="inside">
-                    <h2>PROGRAMMING</h2>
-                    <p>
-                        For programmers
-                    </p>
-                    <div class="services_btn">
-                        <button><a href="../view/product_programming.html">GET BOOKS</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="services_card">
-                <div class="inside">
-                    <h2>TECHNOLOGY</h2>
-                    <p>For technicians</p>
-                    <div class="services_btn">
-                        <button><a href="../view/product_technology.html">GET BOOKS</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="services_card">
-                <div class="inside">
-                    <h2>ELECTRIC & ELECTRONIC</h2>
-                    <p>For engineers</p>
-                    <div class="services_btn">
-                        <button><a href="../view/product_electric_electronic.html">GET BOOKS</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="services_card">
-                <div class="inside">
-                    <h2>MATHEMATICS</h2>
-                    <p>For mathematicians</p>
-                    <div class="services_btn">
-                        <button><a href="../view/product_mathematics.html">GET BOOKS</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="services_card">
-                <div class="inside">
-                    <h2>BUSINESS LAW</h2>
-                    <p>For lawyers</p>
-                    <div class="services_btn">
-                        <button><a href="../view/product_business_law.html">GET BOOKS</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="cart_container">
+
+        <table class="products">
+            <thead class="head">
+                <tr>
+                    <th>Remove</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody class="products-container">
+                <!--   <tr>
+                    <td><a href=""><i class="fas fa-trash"></i></a></td>
+                   <td><img src="../assets/programming/dart.jpg" alt=""></td>
+                    <td>
+                        <h5>Dart Language</h5>
+                    </td>
+                    <td>
+                        <h5>RM 90.00</h5>
+                    </td>
+                    <td>
+                        <h5>2</h5>
+                    </td>
+                    <td>
+                        <h5>RM 90.00</h5>
+                    </td>
+                </tr> -->
+            </tbody>
+
+
+        </table>
     </div>
+
+
+
+    <div class="order">
+        <button><a href="order_summary.html" class="order_button">PROCEED ORDER</a></button>
+    </div>
+
 
     <!--ABOUT SECTION-->
     <div class="footer_container" id="about">
@@ -178,6 +162,7 @@
         </div>
     </div>
     <script src="../js/mobile_menu.js"></script>
+    <script src="../js/products.js"></script>
 </body>
 
 </html>

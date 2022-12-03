@@ -17,7 +17,7 @@
     <nav class="navbar">
         <div class="navbar_container">
             <div class="container">
-                <a id="navbar_logo" href="../view/home.html">
+                <a id="navbar_logo" href="index.html">
                     <img src="../assets/logo.png" class="logo"> E-Book
                 </a>
             </div>
@@ -29,27 +29,28 @@
 
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="../view/home.html" class="navbar_links" id="home-page">Home</a>
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
                 </li>
 
                 <li class="navbar_item">
-                    <a href="#product" class="navbar_links" id="product-page">Product</a>
+                    <a href="product.html" class="navbar_links" id="product-page">Product</a>
                 </li>
 
                 <li class="navbar__item">
-                    <a href="../view/home.html#services" class="navbar_links" id="services-page">Services</a>
+                    <a href="index.html#services" class="navbar_links" id="services-page">Services</a>
                 </li>
 
+
                 <li class="navbar_item">
-                    <a href="../view/home.html#about" class="navbar_links" id="about-page">About</a>
+                    <a href="index.html#about" class="navbar_links" id="about-page">About</a>
                 </li>
 
                 <li class="signin_btn">
-                    <a href="#sign_In" class="sign_in">Sign In</a>
+                    <a href="authentication.html" class="sign_in">Sign In</a>
                 </li>
 
                 <li class="cart_btn">
-                    <a href="#cart" class="cart">Cart</a>
+                    <a href="product_order.html" class="cart">Cart </a>
                 </li>
 
                 <img src="../assets/sun.png" alt="sun.png" id="theme" style="cursor: pointer;">
@@ -62,19 +63,19 @@
             <div class="row">
                 <div class="categories_container">
                     <h2 class="categories_header">Categories</h2>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_programming.html">Programming</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_technology.html">Technology</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_electric_electronic.html">Electric & Electronic</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_mathematics.html">Mathematics</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_business_law.html">Business Law</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_programming.html">Programming</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_technology.html">Technology</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_electric_electronic.html">Electric & Electronic</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_mathematics.html">Mathematics</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_business_law.html">Business Law</a> </b></p>
                 </div>
                 <div class="main_section">
                     <div class="row-2">
 
-                        <form action="" class="search" id="search_products">
-                            <input type="text" id="search" placeholder="Search...">
-                            <button class="btn_search"><i class="fa fa-search" style="color: white; font-size: 17px;"></i></button>
-                        </form>
+
+                        <input type="text" id="find" onkeyup="search()" placeholder="Search...">
+
+
                         <select id="form_control">
                             <option value="">Sorting A-Z</option>
                             <option value="popularity">Sorting by popularity</option>
@@ -95,8 +96,7 @@
                                 <p class="card_text">The programming languages that support the native application by using Flutter framework.</p>
                                 <p class="tags">Price RM 90.00</p>
                                 <br>
-
-                                <a href="../view/product_detail.html?id=001" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=001" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -107,7 +107,7 @@
                                 <p class="card_text ">The technology about the AI, Machile Learning and Deep Learning</p>
                                 <p class="tags">Price RM 60.00</p>
                                 <br>
-                                <a href="../view/product_detail.html?id=002" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=002" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -120,7 +120,7 @@
                                 <p class="tags">Price RM 80.00</p>
                                 <br>
                                 <br>
-                                <a href="../view/product_detail.html?id=003" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=003" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -135,7 +135,7 @@
                                 <h5 class="card_title"><b>Algebra</b></h5>
                                 <p class="card_text">A branch of mathematics that substitutes letters for numbers.</p>
                                 <p class="tags">Price RM 92.00</p>
-                                <a href="../view/product_detail.html?id=004" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=004" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -145,7 +145,7 @@
                                 <h5 class="card_title"><b>Introduction of Business Law</b></h5>
                                 <p class="card_text">The introduction in business law with providing the huge information about current issues</p>
                                 <p class="tags">Price RM 100.00</p>
-                                <a href="../view/product_detail.html?id=005" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=005" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -157,7 +157,7 @@
                                 <h5 class="card_title"><b>Javascript Language</b></h5>
                                 <p class="card_text">A powerful programming language that used to build many technologies.</p>
                                 <p class="tags">Price RM 97.25</p>
-                                <a href="../view/product_detail.html?id=006" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=006" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -173,7 +173,7 @@
                                 <h5 class="cart_title"><b>Statistic</b></h5>
                                 <p class="card_text">The calculation in managing data and analysis some data</p>
                                 <p class="tags">Price RM 40.00</p>
-                                <a href="../view/product_detail.html?id=007" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=007" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -185,7 +185,7 @@
                                 <h5 class="card_title"><b>Python Language</b></h5>
                                 <p class="card_text">The most popular programming language for programmer</p>
                                 <p class="tags">Price RM 130.00</p>
-                                <a href="../view/product_detail.html?id=008" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=008" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -198,7 +198,7 @@
                                 <p class="card_text">Entrepreneur with Business Law course</p>
                                 <p class="tags">Price RM 71.00</p>
 
-                                <a href="../view/product_detail.html?id=009" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=009" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -216,7 +216,7 @@
                                 <h5 class="card_title"><b>Measurements and Instrumentation</b></h5>
                                 <p class="card_text">The information of equipments in electric and electronic.</p>
                                 <p class="tags">Price RM 85.00</p>
-                                <a href="../view/product_detail.html?id=010" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=010" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -228,7 +228,7 @@
                                 <h5 class="card_title"><b>Solidity Language</b></h5>
                                 <p class="card_text">The programming language that used to implement blockchain and smart contracts.</p>
                                 <p class="tags">Price RM 157.00</p>
-                                <a href="../view/product_detail.html?id=011" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=011" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -240,7 +240,7 @@
                                 <h5 class="card_title"><b>Computer and New Technology</b></h5>
                                 <p class="card_text">The information in computer for networking and technology.</p>
                                 <p class="tags">Price RM 67.00</p>
-                                <a href="../view/product_detail.html?id=012" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=012" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -256,7 +256,7 @@
                                 <h5 class="card_title"><b>R Language</b></h5>
                                 <p class="card_text">The backend programming languages for implement statistic and manage data.</p>
                                 <p class="tags">Price RM 70.00</p>
-                                <a href="../view/product_detail.html?id=013" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=013" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -268,22 +268,19 @@
                                 <h5 class="card_title"><b>Web3 Revolution</b></h5>
                                 <p class="card_text">The information for blockchain, cryptocurrencies, NFT and metaverse.</p>
                                 <p class="tags">Price RM 160.00</p>
-                                <a href="../view/product_detail.html?id=014" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=014" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
-
 
                         <div class="card">
                             <div class="card_body">
-                                <img src="../assets/business law/ethics.png" class="product-image">
-                                <h5 class="card_title"><b>Business Law and Ethics</b></h5>
-                                <p class="card_text">The standards for morally right and wrong conduct in business.</p>
-                                <p class="tags">Price RM 55.00</p>
-                                <br>
-                                <a href="../view/product_detail.html?id=016" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <img src="../assets/electric&electronic/power.jpg" class="product-image">
+                                <h5 class="card_title"><b>Power Electronic</b></h5>
+                                <p class="card_text">The branch of electrical engineering that deals with the processing of high voltages and currents to deliver power that supports a variety of needs.</p>
+                                <p class="tags">Price RM 93.00</p>
+                                <a href="product_detail.html?id=015" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
-
 
                     </div>
                     <div>&nbsp;</div>
@@ -292,14 +289,14 @@
 
                         <div class="card">
                             <div class="card_body">
-                                <img src="../assets/electric&electronic/power.jpg" class="product-image">
-                                <h5 class="card_title"><b>Power Electronic</b></h5>
-                                <p class="card_text">The branch of electrical engineering that deals with the processing of high voltages and currents to deliver power that supports a variety of needs.</p>
-                                <p class="tags">Price RM 93.00</p>
-                                <a href="../view/product_detail.html?id=015" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <img src="../assets/business law/ethics.png" class="product-image">
+                                <h5 class="card_title"><b>Business Law and Ethics</b></h5>
+                                <p class="card_text">The standards for morally right and wrong conduct in business.</p>
+                                <p class="tags">Price RM 55.00</p>
+                                <br>
+                                <a href="product_detail.html?id=016" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
-
 
                         <div class="card">
                             <div class="card_body">
@@ -307,7 +304,7 @@
                                 <h5 class="card_title"><b>Essential of Business Law</b></h5>
                                 <p class="card_text">The formal process of establishment of a business organization and regulations related to the selling of corporate entities</p>
                                 <p class="tags">Price RM 38.00</p>
-                                <a href="../view/product_detail.html?id=017" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <a href="product_detail.html?id=017" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -318,7 +315,7 @@
                                 <h5 class="card_title "><b>Calculus 1</b></h5>
                                 <p class="card_text">The branch of mathematics concerned with the calculation of instantaneous rates of change (differential calculus) and the summation of infinitely many small factors to determine some whole (integral calculus).</p>
                                 <p class="tags ">Price RM 97.00</p>
-                                <a href="../view/product_detail.html?id=018" class="btn_cart "><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=018" class="btn_cart "><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -334,7 +331,7 @@
                                 <h5 class="card_title"><b>Ethics in Information Technology</b></h5>
                                 <p class="card_text">The study of the ethical issues arising out of the use and development of electronic technologies.</p>
                                 <p class="tags ">Price RM 107.00</p>
-                                <a href="../view/product_detail.html?id=019" class="btn_cart "><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=019" class="btn_cart "><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -346,7 +343,7 @@
                                 <h5 class="card_title"><b>Interactive Display</b></h5>
                                 <p class="card_text">A mounted device that enables users to make vibrant visual presentations and control on-screen data through digital touchscreen interactions.</p>
                                 <p class="tags ">Price RM 79.00</p>
-                                <a href="../view/product_detail.html?id=020" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=020" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -358,7 +355,7 @@
                                 <h5 class="card_title "><b>Discrete Mathematics</b></h5>
                                 <p class="card_text">The study of mathematical structures that are countable or otherwise distinct and separable.</p>
                                 <p class="tags ">Price RM 71.00</p>
-                                <a href="../view/product_detail.html?id=021" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=021" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -374,7 +371,7 @@
                                 <h5 class="card-title "><b>Fundamentals of Business Law</b></h5>
                                 <p class="card-text small ">Business law encompasses all legal aspects of running a business.</p>
                                 <p class="tags ">Price RM 106.29</p>
-                                <a href="../view/product_detail.html?id=022" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=022" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -386,7 +383,7 @@
                                 <h5 class="card-title "><b>Electric Circuits and Electronic Devices</b></h5>
                                 <p class="card-text small ">The device which controls the flow of electrons is called electronic device.</p>
                                 <p class="tags ">Price RM 129.00</p>
-                                <a href="../view/product_detail.html?id=023" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=023" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -398,7 +395,7 @@
                                 <h5 class="card-title "><b>Practical Electronics for Inventors</b></h5>
                                 <p class="card-text small ">Written by a pair of experienced engineers and dedicated hobbyists.</p>
                                 <p class="tags ">Price RM 60.00</p>
-                                <a href="../view/product_detail.html?id=024" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=024" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -414,7 +411,7 @@
                                 <h5 class="card-title "><b>Integration</b></h5>
                                 <p class="card-text small ">The action or process of combining two or more things in an effective way.</p>
                                 <p class="tags ">Price RM 98.00</p>
-                                <a href="../view/product_detail.html?id=025" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <a href="product_detail.html?id=025" class="btn_cart"><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
                             </div>
                         </div>
 
@@ -482,7 +479,25 @@
 
     <script src="../js/mobile_menu.js"></script>
     <script src="../js/products.js"></script>
-    <script src="../js/search.js"></script>
+    <script type="text/javascript">
+        function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let product = document.querySelectorAll('.card_body');
+            let l = document.getElementsByTagName('h5');
+
+            for (var i = 0; i <= l.length; i++) {
+                let a = product[i].getElementsByTagName('h5')[0];
+
+                let value = a.innerHTML || a.innerText || a.textContent;
+
+                if (value.toUpperCase().indexOf(filter) > -1) {
+                    product[i].style.display = "";
+                } else {
+                    product[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
 
 

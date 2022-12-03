@@ -164,7 +164,7 @@
 }
 
 .sign_in {
-    color: var(--thirty-color);
+    color: white;
     text-decoration: none;
 }
 
@@ -290,6 +290,10 @@
     margin-bottom: 30px;
 }
 
+#result {
+    display: grid;
+}
+
 .categories_container {
     color: white;
     background-color: #ff8177;
@@ -329,21 +333,7 @@
 input {
     width: 400px;
     height: 50px;
-}
-
-.btn_search {
-    width: 50px;
-    height: 53px;
-    background-color: #ff8177;
-    background-image: linear-gradient(to bottom, #ff0844 0%, #f79476 100%);
-    cursor: pointer;
-    border: none;
-}
-
-.search {
-    text-decoration: none;
-    font-size: 24px;
-    color: white;
+    margin-right: 50px;
 }
 
 #form_control {
@@ -420,6 +410,12 @@ h5 {
     .card_body {
         margin: auto;
         border: 1px solid #131313;
+    }
+    input {
+        margin: 30px;
+    }
+    #form_control {
+        margin: 30px;
     }
 }
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style2.css">
     <link rel="stylesheet" href="https://fontawesome.com/icons/magnifying-glass?s=solid&f=classic">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-    <title>Product</title>
+    <title>Programming Product</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar">
         <div class="navbar_container">
             <div class="container">
-                <a id="navbar_logo" href="../view/home.html">
+                <a id="navbar_logo" href="index.html">
                     <img src="../assets/logo.png" class="logo"> E-Book
                 </a>
             </div>
@@ -28,53 +28,49 @@
 
             <ul class="navbar_menu">
                 <li class="navbar_item">
-                    <a href="../view/home.html" class="navbar_links" id="home-page">Home</a>
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
                 </li>
 
                 <li class="navbar_item">
-                    <a href="../view/product.html" class="navbar_links" id="product-page">Product</a>
+                    <a href="product.html" class="navbar_links" id="product-page">Product</a>
                 </li>
 
                 <li class="navbar__item">
-                    <a href="../view/home.html#services" class="navbar_links" id="services-page">Services</a>
+                    <a href="index.html#services" class="navbar_links" id="services-page">Services</a>
                 </li>
 
 
                 <li class="navbar_item">
-                    <a href="../view/home.html#about" class="navbar_links" id="about-page">About</a>
+                    <a href="index.html#about" class="navbar_links" id="about-page">About</a>
                 </li>
 
                 <li class="signin_btn">
-                    <a href="#sign_In" class="sign_in">Sign In</a>
+                    <a href="authentication.html" class="sign_in">Sign In</a>
                 </li>
 
                 <li class="cart_btn">
-                    <a href="#cart" class="cart">Cart</a>
+                    <a href="product_order.html" class="cart">Cart </a>
                 </li>
 
                 <img src="../assets/sun.png" alt="sun.png" id="theme" style="cursor: pointer;">
             </ul>
         </div>
     </nav>
-
     <!--PRODUCT SECTION-->
     <section class="product_section" id="product">
         <div class="container">
             <div class="row">
                 <div class="categories_container">
                     <h2 class="categories_header">Categories</h2>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_programming.html">Programming</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_technology.html">Technology</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_electric_electronic.html">Electric & Electronic</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_mathematics.html">Mathematics</a> </b></p>
-                    <p class="product_sidebar"><b><span> > </span> <a href="../view/product_business_law.html"style="color:black; font-weight: bold;">Business Law</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_programming.html" style="color:black; font-weight: bold;">Programming</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_technology.html">Technology</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_electric_electronic.html">Electric & Electronic</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_mathematics.html">Mathematics</a> </b></p>
+                    <p class="product_sidebar"><b><span> > </span> <a href="product_business_law.html">Business Law</a> </b></p>
                 </div>
                 <div class="main_section">
                     <div class="row-2">
-                        <form action="" class="search">
-                            <input type="text" placeholder="Search...">
-                            <button class="btn_search"><i class="fa fa-search" style="color: white; font-size: 17px;"></i></button>
-                        </form>
+                        <input type="text" id="find" onkeyup="search()" placeholder="Search...">
                         <select id="form_control">
                             <option value="">Sorting A-Z</option>
                             <option value="popularity">Sorting by popularity</option>
@@ -90,65 +86,65 @@
                     <div class="row-3">
                         <div class="card">
                             <div class="card_body">
-                                <img src="../assets/business law/introduction.jpg" class="product-image">
-                                <h5 class="card_title"><b>Introduction of Business Law</b></h5>
-                                <p class="card_text">The introduction in business law with providing the huge information about current issues</p>
-                                <p class="tags">Price RM 100.00</p>
-                                <a href="../view/product_detail.html?id=005" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card_body">
-                                <img src="../assets/business law/entrepreneur.jpg" class="product-image">
-                                <h5 class="card_title"><b>Business Law for Entrepreneur</b></h5>
-                                <p class="card_text">Entrepreneur with Business Law course</p>
-                                <p class="tags">Price RM 71.00</p>
-
-                                <a href="../view/product_detail.html?id=009" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card_body">
-                                <img src="../assets/business law/ethics.png" class="product-image">
-                                <h5 class="card_title"><b>Business Law and Ethics</b></h5>
-                                <p class="card_text">The standards for morally right and wrong conduct in business.</p>
-                                <p class="tags">Price RM 55.00</p>
+                                <img src="../assets/programming/dart.jpg">
+                                <h5 class="card_title"><b>Dart Language</b></h5>
+                                <p class="card_text">The programming languages that support the native application by using Flutter framework.</p>
+                                <p class="tags">Price RM 90.00</p>
                                 <br>
-                                <a href="../view/product_detail.html?id=016" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+
+                                <a href="product_detail.html?id=001" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_body">
+                                <img src="../assets/programming/R.jpg" class="product-image">
+                                <h5 class="card_title"><b>R Language</b></h5>
+                                <p class="card_text">The backend programming languages for implement statistic and manage data.</p>
+                                <p class="tags">Price RM 70.00</p>
+                                <a href="product_detail.html?id=013" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card_body">
+                                <img src="../assets/programming/solidity.jpg" class="product-image">
+                                <h5 class="card_title"><b>Solidity Language</b></h5>
+                                <p class="card_text">The programming language that used to implement blockchain and smart contracts.</p>
+                                <p class="tags">Price RM 157.00</p>
+                                <a href="product_detail.html?id=011" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
                     </div>
                     <div>&nbsp;</div>
                     <div>&nbsp;</div>
+
                     <div class="row-3">
                         <div class="card">
                             <div class="card_body">
-                                <img src="../assets/business law/essential.jpg" class="product-image">
-                                <h5 class="card_title"><b>Essential of Business Law</b></h5>
-                                <p class="card_text">The formal process of establishment of a business organization and regulations related to the selling of corporate entities</p>
-                                <p class="tags">Price RM 38.00</p>
-                                <a href="../view/product_detail.html?id=017" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                <img src="../assets/programming/javascript.jpg" class="product-image">
+                                <h5 class="card_title"><b>Javascript Language</b></h5>
+                                <p class="card_text">A powerful programming language that used to build many technologies.</p>
+                                <p class="tags">Price RM 97.25</p>
+                                <a href="product_detail.html?id=006" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
 
                         <div class="card">
                             <div class="card_body">
-                                <img src="../assets/business law/fundamentals.jpg" class="product-image ">
-                                <h5 class="card_title "><b>Fundamentals of Business Law</b></h5>
-                                <p class="card_text">Business law encompasses all legal aspects of running a business.</p>
-                                <p class="tags ">Price RM 106.29</p>
-                                <a href="../view/product_detail.html?id=022" class="btn_cart "><i class="fa fa-shopping-cart " aria-hidden="true "></i> Add to cart</a>
+                                <img src="../assets/programming/python.jpg" class="product-image">
+                                <h5 class="card_title"><b>Python Language</b></h5>
+                                <p class="card_text">The most popular programming language for programmer</p>
+                                <p class="tags">Price RM 130.00</p>
+                                <a href="product_detail.html?id=008" class="btn_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
                             </div>
                         </div>
                     </div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
                 </div>
-                <div>&nbsp;</div>
-                <div>&nbsp;</div>
             </div>
-        </div>
         </div>
         </div>
     </section>
@@ -209,6 +205,27 @@
 
     <script src="../js/mobile_menu.js"></script>
     <script src="../js/products.js"></script>
+    <script type="text/javascript">
+        function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let product = document.querySelectorAll('.card_body');
+            let l = document.getElementsByTagName('h5');
+
+            for (var i = 0; i <= l.length; i++) {
+                let a = product[i].getElementsByTagName('h5')[0];
+
+                let value = a.innerHTML || a.innerText || a.textContent;
+
+                if (value.toUpperCase().indexOf(filter) > -1) {
+                    product[i].style.display = "";
+                } else {
+                    product[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
+
+
 
 </html>

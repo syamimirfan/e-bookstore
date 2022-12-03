@@ -4,98 +4,126 @@
             "image": "../assets/programming/dart.jpg",
             "productName": "Dart Language",
             "description": "The programming languages that support the native application by using Flutter framework.",
-            "price": "RM 90.00"
+            "price": "90.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "002",
             "image": "../assets/technology/AI.jpg",
             "productName": "AI",
             "description": "The technology about the AI, Machile Learning and Deep Learning.",
-            "price": "RM 60.00"
+            "price": "60.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "003",
             "image": "../assets/electric&electronic/principle_electronic.jpg",
             "productName": "Principles of Electronic",
             "description": "The introduction of electric and electronic course.",
-            "price": "RM 80.00"
+            "price": "80.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "004",
             "image": "../assets/mathematics/algebra.jpg",
             "productName": "Algebra",
             "description": "A branch of mathematics that substitutes letters for numbers.",
-            "price": "RM 92.00"
+            "price": "92.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "005",
             "image": "../assets/business law/introduction.jpg",
             "productName": "Introduction of Business Law",
             "description": "The introduction in business law with providing the huge information about current issues",
-            "price": "RM 100.00"
+            "price": "100.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "006",
             "image": "../assets/programming/javascript.jpg",
             "productName": "Javascript Language",
             "description": "A powerful programming language that used to build many technologies.",
-            "price": "RM 97.25"
+            "price": "97.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "007",
             "image": "../assets/mathematics/statistic.jpg",
             "productName": "Statistic",
             "description": "The calculation in managing data and analysis some data.",
-            "price": "RM 40.00"
+            "price": "40.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "008",
             "image": "../assets/programming/python.jpg",
             "productName": "Python Language",
             "description": "The programming languages that support the native application by using Flutter framework.",
-            "price": "RM 130.00"
+            "price": "130.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "009",
             "image": "../assets/business law/entrepreneur.jpg",
             "productName": "Business Law for Entrepreneur",
             "description": "Entrepreneur with Business Law course.",
-            "price": "RM 71.00"
+            "price": "71.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "010",
             "image": "../assets/electric&electronic/measurements.jpg",
             "productName": "Measurements and Instrumentation",
             "description": "The information of equipments in electric and electronic.",
-            "price": "RM 85.00"
+            "price": "85.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "011",
             "image": "../assets/programming/solidity.jpg",
             "productName": "Solidity Language",
             "description": "The programming language that used to implement blockchain and smart contracts.",
-            "price": "RM 157.00"
+            "price": "157.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "012",
             "image": "../assets/technology/computer.jpg",
             "productName": "Computer and New Technology",
             "description": "The information in computer for networking and technology.",
-            "price": "RM 67.00"
+            "price": "67.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "013",
             "image": "../assets/programming/R.jpg",
             "productName": "R Language",
             "description": "The backend programming languages for implement statistic and manage data.",
-            "price": "RM 70.00"
+            "price": "70.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "014",
             "image": "../assets/technology/web3.jpg",
             "productName": "Web3 Revolution",
             "description": "The information for blockchain, cryptocurrencies, NFT and metaverse.",
-            "price": "RM 160.00"
+            "price": "160.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
 
         {
@@ -103,76 +131,98 @@
             "image": "../assets/electric&electronic/power.jpg",
             "productName": "Power Electronic",
             "description": "The branch of electrical engineering that deals with the processing of high voltages and currents to deliver power that supports a variety of needs.",
-            "price": "RM 93.00"
+            "price": "93.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "016",
             "image": "../assets/business law/ethics.png",
             "productName": "Business Law and Ethics",
             "description": "The standards for morally right and wrong conduct in business.",
-            "price": "RM 55.00"
+            "price": "55.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "017",
             "image": "../assets/business law/essential.jpg",
             "productName": "Essential of Business Law",
             "description": "The formal process of establishment of a business organization and regulations related to the selling of corporate entities.",
-            "price": "RM 38.00"
+            "price": "38.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "018",
             "image": "../assets/mathematics/calculus1.jpg",
             "productName": "Calculus 1",
             "description": "The branch of mathematics concerned with the calculation of instantaneous rates of change (differential calculus) and the summation of infinitely many small factors to determine some whole (integral calculus).",
-            "price": "RM 97.00"
+            "price": "97.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "019",
             "image": "../assets/technology/information.jpg",
             "productName": "Ethics in Information Technology",
             "description": "The study of the ethical issues arising out of the use and development of electronic technologies.",
-            "price": "RM 107.00"
+            "price": "107.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "020",
             "image": "../assets/technology/interactive.jpg",
             "productName": "Interactive Display",
             "description": "A mounted device that enables users to make vibrant visual presentations and control on-screen data through digital touchscreen interactions.",
-            "price": "RM 79.00"
+            "price": "79.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "021",
             "image": "../assets/mathematics/descrete_math.jpg",
             "productName": "Discrete Mathematics",
             "description": "The study of mathematical structures that are countable or otherwise distinct and separable.",
-            "price": "RM 71.00"
+            "price": "71.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "022",
             "image": "../assets/business law/fundamentals.jpg",
             "productName": "Fundamentals of Business Law",
             "description": "Business law encompasses all legal aspects of running a business.",
-            "price": "RM 106.29"
+            "price": "106.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "023",
             "image": "../assets/electric&electronic/circuit.jpg",
             "productName": "Electric Circuits and Electronic Devices",
             "description": "The device which controls the flow of electrons is called electronic device.",
-            "price": "RM 129.00"
+            "price": "129.00",
+            "inCart": 0,
+            "totalPrice": 0
         },
         {
             "productID": "024",
             "image": "../assets/electric&electronic/practical.jpg",
             "productName": "Practical Electronics for Inventors",
             "description": "Written by a pair of experienced engineers and dedicated hobbyists.",
-            "price": "RM 60.00"
+            "price": "60.00",
+            "inCart": 0,
+            "totalPrice": 0
         }, {
             "productID": "025",
             "image": "../assets/mathematics/integration.jpg",
             "productName": "Integration",
             "description": "The action or process of combining two or more things in an effective way.",
-            "price": "RM 98.00"
+            "price": "98.00",
+            "inCart": 0,
+            "totalPrice": 0
         }
     ]
 }

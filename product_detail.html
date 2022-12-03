@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/magnifying-glass?s=solid&f=classic">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <title>Product Detail</title>
+
+</head>
+
+<body>
+    <!--NAVBAR SECTION-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <div class="container">
+                <a id="navbar_logo" href="index.html">
+                    <img src="../assets/logo.png" class="logo"> E-Book
+                </a>
+            </div>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+
+                <li class="navbar_item">
+                    <a href="product.html" class="navbar_links" id="product-page">Product</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="index.html#services" class="navbar_links" id="services-page">Services</a>
+                </li>
+
+
+                <li class="navbar_item">
+                    <a href="index.html#about" class="navbar_links" id="about-page">About</a>
+                </li>
+
+                <li class="signin_btn">
+                    <a href="authentication.html" class="sign_in">Sign In</a>
+                </li>
+
+                <li class="cart_btn">
+                    <a href="product_order.html" class="cart">Cart </a>
+                </li>
+
+                <img src="../assets/sun.png" alt="sun.png" id="theme" style="cursor: pointer;">
+            </ul>
+        </div>
+    </nav>
+
+    <!--DETAIL SECTION-->
+
+    <div class="container_product_detail">
+        <div class="row">
+            <div id="image">
+                <!-- image -->
+                <!-- <img src="${product[0].image}" class="img"> -->
+            </div>
+            <div id="info">
+                <!-- <div class="information">NEW</div>-->
+                <!-- productName -->
+                <!-- <h2>${product[0].productName}</h2>
+                <label><b>Product Code</b></label> -->
+                <!-- productID -->
+                <!-- <p class="text_green">${product[0].productID}</p>
+                <img src="../assets/star.png" alt="star.png" class="star"> -->
+                <!-- description -->
+                <!-- <p>${product[0].description}</p> -->
+                <!-- price -->
+                <!-- <p class="price">${product[0].price}</p>
+                      -->
+                <!-- <div class="user_add">
+                    <label><b>Availability</b></label>
+                    <p class="text_green"> In Stock</p>
+                    <label><b>Condition</b></label>
+                    <p class="text_green"> New</p>
+                    <label><b>Quantity</b></label>
+                    <input type="text" value="1">
+
+                    <button type="button" class="btn_cart">
+                            Add to Cart
+                        </button>
+                </div> -->
+            </div>
+
+        </div>
+        <div class="popup center" style="background: #00ff00;">
+            <br><br>
+            <div class="title" style="color: white;">
+                Item Added!
+            </div>
+            <div class="okay-btn">
+                <button id="add_okay">Okay</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--ABOUT SECTION-->
+    <div class="footer_container" id="about">
+        <div class="footer_link_wrapper">
+            <div class="footer_link_items">
+                <h2>About Us</h2>
+                <a href="">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="">Careers</a>
+                <a href="/">Terms of Service</a>
+                <a href="/">Customer Service</a>
+            </div>
+            <div class="footer_link_items">
+                <h2>Contact Us</h2>
+                <a href="/">Contact</a>
+                <a href="/">Support</a>
+                <a href="/">Destinations</a>
+                <a href="/">WhatsApp</a>
+                <a href="/">Telegram</a>
+            </div>
+            <div class="footer_link_items">
+                <h2>Videos</h2>
+                <a href="">Submit Video</a>
+                <a href="/">Ambassador</a>
+                <a href="/">Agency</a>
+                <a href="/">Company</a>
+                <a href="/">Business</a>
+            </div>
+            <div class="footer_link_items">
+                <h2>Social media</h2>
+                <a href="/">Instagram</a><a href="/">Facebook</a>
+                <a href="/">Youtube</a> <a href="/">Twitter</a>
+                <a href="/">Linkedln</a>
+            </div>
+        </div>
+
+        <div class="social_media">
+            <div class="social_media_wrap">
+                <p class="website_rights">© E-BOOK 2022. All rights reserved</p>
+                <div class="social_icons">
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-youtube"></i></a>
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-twitter"></i></a>
+                    <a href="/" class="social_icons_link" target="_blank">
+                        <i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/products.js"></script>
+    <script src="../js/mobile_menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style4.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>E-bookstore Registration</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <!-- LOGIN SECTION -->
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email-login" id="email-login" placeholder="Email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password-login" id="password-login" placeholder="Password" required />
+                    </div>
+                    <input type="submit" name="submit-login" value="Login" class="btn solid" />
+
+
+                </form>
+
+                <div class="popup_login center" style="background: #00ff00;">
+                    <br><br>
+                    <div class="title" style="color: white;">
+                        Login Successful!
+                    </div>
+                    <div class="okay-btn">
+                        <button id="login_okay">Okay</button>
+                    </div>
+                </div>
+
+                <div class="popup_login_error1 center" style="background: #ff0000;">
+                    <br><br>
+                    <div class="title" style="color: white;">
+                        Wrong Password!
+                    </div>
+                    <div class="okay-btn">
+                        <button id="login_error1_okay">Okay</button>
+                    </div>
+                </div>
+
+                <div class="popup_login_error2 center" style="background: #ff0000;">
+                    <br><br>
+                    <div class="title" style="color: white;">
+                        Invalid User!
+                    </div>
+                    <div class="okay-btn">
+                        <button id="login_error2_okay">Okay</button>
+                    </div>
+                </div>
+                <!-- REGISTER FORM -->
+                <form action="#" class="sign-up-form">
+                    <h2 class="title" id="sign-up">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username-register" id="username-register" placeholder="Username" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email-register" id="email-register" placeholder="Email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password-register" id="password-register" placeholder="Password" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-phone"></i>
+                        <input type="text" name="phone-register" id="phone-register" placeholder="Phone" required />
+                    </div>
+                    <input type="submit" onclick="registration()" name="submit-register" class="btn" value="Sign up" />
+
+                </form>
+                <div class="popup center" style="background: #0000ff;">
+                    <br><br>
+                    <div class="title" style=" color:white;">
+                        Welcome to Registration!
+                    </div>
+                    <div class="okay-btn">
+                        <button id="okay">Okay</button>
+                    </div>
+                </div>
+
+                <div class="popup_register_success center" style="background: #00ff00;">
+                    <br><br>
+                    <div class="title" style="color: white;">
+                        Registration Successful!
+                    </div>
+                    <div class="okay-btn">
+                        <button id="register_success_okay">Okay</button>
+                    </div>
+                </div>
+                <div class="popup_register_unsuccess center" style="background: #ff0000;">
+                    <br><br>
+                    <div class="title" style="color: white;">
+                        Registration Unsuccessful!
+                    </div>
+                    <div class="okay-btn">
+                        <button id="register_unsuccess_okay">Okay</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here ?</h3>
+                    <p>
+                        Login to our system to gain access to make orders your chosen books!
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">
+                Sign up
+              </button>
+                </div>
+                <img src="../assets/login_registration/log.svg" class="image" alt="log.svg" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us ?</h3>
+                    <p>
+                        Not register yet? Please register to make more activity and orders your books!
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">
+                Sign in
+              </button>
+                </div>
+                <img src="../assets/login_registration/register.svg" class="image" alt="register.svg" />
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/authentication.js"></script>
+</body>
+
+</html>
