@@ -281,7 +281,7 @@ function discountFive(subTotal) {
     });
     if (totalOfProductCart >= 5 && totalOfProductCart <= 10) {
         subTotal *= 0.95;
-        localStorage.setItem("totalAmountOfFiveDiscount", JSON.stringify(subTotal));
+        localStorage.setItem("totalAmountOfFiveDiscount", JSON.stringify(subTotal.toFixed(2)));
     }
 
 
@@ -303,7 +303,7 @@ function discountTen(subTotal) {
 
     if (totalOfProductCart > 10) {
         subTotal *= 0.85;
-        localStorage.setItem("totalAmountOfTenDiscount", JSON.stringify(subTotal));
+        localStorage.setItem("totalAmountOfTenDiscount", JSON.stringify(subTotal.toFixed(2)));
     }
 
 
