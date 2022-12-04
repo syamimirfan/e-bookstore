@@ -183,14 +183,14 @@ function displayCart() {
 
 
 function deleteCart(productID) {
-
-    if (productID >= 1 && productID <= 9) {
+    console.log(productID);
+    if (productID >= 1 && productID < 9) {
         let cartItems = localStorage.getItem('productsInCart');
         cartItems = JSON.parse(cartItems);
         let temp = cartItems.filter(item => parseInt(item.productID) !== productID);
         localStorage.setItem("productsInCart", JSON.stringify(temp));
 
-    } else if (productID > 9 && productID < 16) {
+    } else if (productID >= 9 && productID < 16) {
         productID += 2;
         let cartItems = localStorage.getItem('productsInCart');
         cartItems = JSON.parse(cartItems);
