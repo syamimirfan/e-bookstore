@@ -47,12 +47,12 @@ function displayCartTotalDiscount5() {
 
     if (totalAmountOfFiveDiscount && totalOfProductCart >= 5 && totalOfProductCart <= 10) {
         discount5.innerHTML += `
-        <h6>5% Discount</h6>
+        <h6>5% DISCOUNT</h6>
          <p>RM ${totalAmountOfFiveDiscount}</p>
          `;
     } else {
         discount5.innerHTML += `
-        <h6>5% Discount</h6>
+        <h6>5% DISCOUNT</h6>
         <p></p> 
         `;
     }
@@ -79,12 +79,12 @@ function displayCartTotalDiscount10() {
 
     if (totalAmountOfTenDiscount && totalOfProductCart >= 10) {
         discount15.innerHTML += `
-        <h6>15% Discount</h6>
+        <h6>15% DISCOUNT</h6>
          <p>RM ${totalAmountOfTenDiscount}</p>
          `;
     } else {
         discount15.innerHTML += `
-        <h6>15% Discount</h6>
+        <h6>15% DISCOUNT</h6>
         <p></p> 
         `;
     }
@@ -100,12 +100,12 @@ function postageFee() {
 
     if (postageFee !== 10) {
         postage.innerHTML += `
-        <h6>Postage</h6>
+        <h6>POSTAGE</h6>
         <p>${postageFee}</p>
     `;
     } else {
         postage.innerHTML += `
-        <h6>Postage</h6>
+        <h6>POSTAGE</h6>
         <p>RM ${postageFee}</p>
     `;
     }
@@ -152,23 +152,23 @@ function totalAmount() {
 
     if (totalAmountOfFiveDiscount && postageFee === 10 && totalOfProductCart >= 5 && totalOfProductCart <= 10) {
         amount.innerHTML += `
-        <h6>TOTAL 5% DISCOUNT</h6>
+        <h6>TOTAL</h6>
          <p>RM ${totalAmountOfFiveDiscount + 10}</p>
         `;
     } else if (totalAmountOfFiveDiscount && totalOfProductCart >= 5 && totalOfProductCart <= 10) {
         amount.innerHTML += `
-        <h6>TOTAL 5% DISCOUNT</h6>
+        <h6>TOTAL</h6>
          <p>RM ${totalAmountOfFiveDiscount}</p>
         `;
     }
     if (totalAmountOfTenDiscount && postageFee === 10 && totalOfProductCart > 10) {
         amount.innerHTML += `
-        <h6>TOTAL 15% DISCOUNT</h6>
+        <h6>TOTAL</h6>
          <p>RM ${totalAmountOfTenDiscount + 10}</p>
         `;
     } else if (totalAmountOfTenDiscount && totalOfProductCart > 10) {
         amount.innerHTML += `
-        <h6>TOTAL 15% DISCOUNT</h6>
+        <h6>TOTAL</h6>
          <p>RM ${totalAmountOfTenDiscount}</p>
         `;
     }
