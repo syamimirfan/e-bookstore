@@ -23,12 +23,13 @@ function registration() {
     var phone = document.getElementById("phone-register").value;
 
     var register_success = document.querySelector('.popup_register_success');
-    var register_success_okay = document.querySelector('#register_success_okay ');
+    var register_success_okay = document.querySelector('#register_success_okay');
 
     var register_unsuccess = document.querySelector('.popup_register_unsuccess');
-    var register_unsuccess_okay = document.querySelector('#register_unsuccess_okay ');
+    var register_unsuccess_okay = document.querySelector('#register_unsuccess_okay');
 
     if (username !== "" && email !== "" && password !== "" && phone !== "") {
+
         //storing data in local storage
         localStorage.setItem("username", username);
         localStorage.setItem("email", email);
@@ -36,7 +37,6 @@ function registration() {
         localStorage.setItem("phone", phone);
 
         register_success.classList.add("active");
-
         register_success_okay.addEventListener("click", function() {
             register_success.classList.remove("active");
             container.classList.remove("sign-up-mode");
@@ -46,7 +46,6 @@ function registration() {
         register_unsuccess.classList.add("active");
         register_unsuccess_okay.addEventListener("click", function() {
             register_unsuccess.classList.remove("active");
-
         });
     }
 }

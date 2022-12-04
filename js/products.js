@@ -49,8 +49,6 @@ renderDetails().then(data => {
 
 });
 
-
-
 function addToCart(productID, productName, productImage, productPrice, productTotalPrice) {
 
     var popup = document.querySelector('.popup');
@@ -80,7 +78,6 @@ function setItems(productID, productName, productImage, productPrice, productInC
         productTotalPrice: parseInt(productTotalPrice)
     };
 
-
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
 
@@ -94,7 +91,6 @@ function setItems(productID, productName, productImage, productPrice, productInC
                 cartItems[i].productTotalPrice = cartItems[i].productPrice * cartItems[i].productInCart;
                 isLooped = true;
             }
-
         }
         product.productTotalPrice = product.productPrice * product.productInCart;
         if (!isLooped) {
@@ -102,20 +98,14 @@ function setItems(productID, productName, productImage, productPrice, productInC
                 ...cartItems,
                 product
             ];
-
         }
     } else {
         product.productTotalPrice = product.productPrice * product.productInCart;
         cartItems = [
             product
         ]
-
-
     }
-
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-
-
 }
 
 
@@ -194,9 +184,6 @@ function displayCart() {
 
 function deleteCart(productID) {
 
-    var popup = document.querySelector('.popup');
-    var delete_okay = document.querySelector('#delete_okay');
-
     if (productID >= 1 && productID <= 9) {
         let cartItems = localStorage.getItem('productsInCart');
         cartItems = JSON.parse(cartItems);
@@ -225,10 +212,9 @@ function deleteCart(productID) {
         productID += 4;
         let cartItems = localStorage.getItem('productsInCart');
         cartItems = JSON.parse(cartItems);
-
-
         let temp = cartItems.filter(item => parseInt(item.productID) !== productID);
         localStorage.setItem("productsInCart", JSON.stringify(temp));
+
     }
 
     if (productID === 8) {
@@ -239,6 +225,7 @@ function deleteCart(productID) {
         let temp = cartItems.filter(item => parseInt(item.productID) !== productID);
 
         localStorage.setItem("productsInCart", JSON.stringify(temp));
+
     }
 
     if (productID === 19) {
@@ -254,7 +241,6 @@ function deleteCart(productID) {
     alert("Item Deleted");
 
 }
-
 
 
 function totalAmount() {
