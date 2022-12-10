@@ -283,8 +283,6 @@ function discountFive(subTotal) {
         subTotal *= 0.95;
         localStorage.setItem("totalAmountOfFiveDiscount", JSON.stringify(subTotal.toFixed(2)));
     }
-
-
 }
 
 function discountTen(subTotal) {
@@ -305,12 +303,9 @@ function discountTen(subTotal) {
         subTotal *= 0.85;
         localStorage.setItem("totalAmountOfTenDiscount", JSON.stringify(subTotal.toFixed(2)));
     }
-
-
 }
 
 function postageFee(subTotal) {
-
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
 
@@ -334,6 +329,5 @@ function postageFee(subTotal) {
     } else {
         localStorage.setItem("postageFee", JSON.stringify("NO PRODUCTS"));
     }
-
 }
 displayCart();
